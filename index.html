@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="place" content="template">
+  <meta name="date" content="dummy">
+  <title>Event Name</title>
+  <style type="text/css">
+  body, html {
+    background-color: white;
+    font-size: 110%;
+  }
+  a {
+    color: #0af;
+    text-decoration: none;
+  }
+  h1 {
+    font-family: fantasy;
+    text-align: center;
+    margin-top: 50px;
+  }
+  h2 {
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+  }
+  .main {
+   margin: 30px auto 70px auto;
+   width: 767px;
+   background-color: #600d21;
+   background: -webkit-linear-gradient(#600d21 0%, #600d21 30%, #320712 100%);
+   box-shadow: 0px 20px 50px #333;
+   border: 20px solid white;
+   color: #eee;
+   font-family: "Helvetica Neue", sans-serif;
+ }
+ .poster {
+   width: 100%;
+ }
+ .intro {
+   padding: 30px;
+ }
+ .enrollments {
+   padding: 30px;
+ }
+ .enrollments {
+ }
+ .attendee {
+   display: inline-block;
+   background-color: white;
+   padding: 15px;
+   border-radius: 5px;
+   box-shadow: 0px 1px 0px black;
+   width: 300px;
+   white-space: nowrap;
+   overflow: hidden;
+   margin: 20px 10px;
+ }
+ .details, .avatar {
+   display: inline-block;
+   margin: 0;
+ }
+ .details {
+   list-style: none;
+   color: #666;
+   line-height: 20px;
+   font-size: 12px;
+ }
+ .details li {
+   list-style: none;
+ }
+ .avatar img {
+   border-radius: 40px;
+ }
+ .cal {
+   border: 1px solid #ccc;
+   border-top: 3px solid #ae2222;
+   display: inline-block;
+   margin-right: 5px;
+   padding: 1px;
+ }
+ .skill {
+   display: inline-block;
+   background-color: #2061ac;
+   color: white;
+   padding: 3px;
+   border-radius: 3px;
+   margin-right: 3px;
+ }
+ .loading {
+   display: block;
+   width: 100%;
+   padding: 10px 0;
+   background-color: white;
+ }
+ .loading img {
+   display: block;
+   margin: 10px auto;
+   width: auto;
+ }
+ </style>
+</head>
+<body>
+	<div class="main">
+   <header><img class="poster" src="drinkup_em.svg" /></header>
+   <section class="intro">
+    <h1>Harbin Github Users</h1>
+
+<h2>Smell Like Geek Spirit！</h2>
+
+<ul>
+<li>Do you have the feeling of first love  when you first use Github?</li>
+<li>Do you have more pleasure than triple kill when you push code to Github?</li>
+<li>Do you want to attend the Github Worldwide Drinkup when you read the Github blog?</li>
+</ul>
+
+
+<p>If you have any of these characters, you are the geeky guy that we want! Don't hesitate, send your pull request and join us now!</p>
+
+<p>Happy Hacking &amp; Drinking!</p>
+
+<h2>Join Us</h2>
+
+<h3>Requirements</h3>
+
+<p>We welcome all the Github lovers to attend this hackathon! As the limited place , it can only hold 10 - 15 people. So, we have to review all the requests  and confirm the qualification. If you want to join us , you should</p>
+
+<ol>
+<li>Have a  Github account before 2013-04-20</li>
+<li>Have open sourced at least one project and been starred by others</li>
+<li>Have contributed to other open source project hosted on Github</li>
+</ol>
+
+
+<h3>Bonus</h3>
+
+<ol>
+<li>If you have a open source project which has more than 200 stars</li>
+<li>If you have contributed to any famous open source project which has more than 500 stars</li>
+</ol>
+
+
+<p>You will get bonus when we review your request.</p>
+
+<h3>How to join us</h3>
+
+<ul>
+<li>Fork this repo, and find the drinkup branch you are interested in</li>
+<li>The drinkup branch follows the convention of LOCATION-DATE, for  example, drinkup that takes place in HIT at April of 2013 is named as hit-201304</li>
+<li>Create a json file named as YOUR_GITHUB_LOGIN.json</li>
+<li>Fill the json file according to void-main.json</li>
+<li>Push the json file to your own remote repo</li>
+<li>Send us a pull-request to the right branch</li>
+</ul>
+
+
+<h2>Agenda</h2>
+
+<h3>Hackathon</h3>
+
+<ul>
+<li>Date: <code>2013-4-28 10:00</code> - <code>2013-4-29 16:00</code></li>
+<li>Topic: Hackathon. We will release a toy project in one day!</li>
+<li>Feel free choose your project and your teammates.</li>
+<li>Supplies: Lunch, Super, Soft Drinks, Fruits, Snacks.</li>
+<li>Place: TBD</li>
+</ul>
+
+
+<h3>Drinkup</h3>
+
+<ul>
+<li>Date: <code>2013-4-29 18:00</code> - <code>2013-4-29 20:00</code></li>
+<li>Topic: Drinkup. Show your toy project and talk any things about Github or geek stuffs.</li>
+<li>Supplies: Soft Drinks, Snacks and German Beer</li>
+<li>Place: TBD</li>
+</ul>
+
+
+<h2>About the Fee</h2>
+
+<p>This activity is FREE of Charge!</p>
+
+<h2>Sponsor</h2>
+
+<p>Thanks <a href="https://github.com/zhf">@zhf</a> for sponsoring this Hackathon &amp; Drinkup！</p>
+
+  </section>
+
+  <h1>Enrollments</h1>
+  <section class="enrollments">
+    <div id="loader" class="loading"><img src="loader.gif"/></div>
+  </section>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/attendee.js"></script>
+</html>
