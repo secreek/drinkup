@@ -14,6 +14,7 @@ $(function(){
                     $(html).find(".avatar img").attr('src', result['avatar_url']);
                     $(html).find(".name").attr('href', result['url']);
                     $(html).find(".name").html(result['login']);
+                    #.each(result[''])
                     $(html).find(".cal-list").html(result['login']);
                     container.append(html);
                 });
