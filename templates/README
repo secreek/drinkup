@@ -1,0 +1,2 @@
+drinkup.svg use local fonts for rendering, while drinkup-em.svg embbed the path of the text in the image. Just use drinkup-em.svg if you are not sure what's the difference.
+
