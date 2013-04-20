@@ -95,26 +95,60 @@
    margin: 10px auto;
    width: auto;
  }
- </style>
-</head>
-<body>
-  <div class="main">
-    <header><img class="poster" src="drinkup_em.svg" /></header>
-    <section class="intro">
-      <%= render_partial env, 'Intro' %>
-    </section>
 
-    <header><h1>Location</h1></section>
-    <section class="location">
-    <div id="map_canvas"></div>
-    </section>
+ #map_canvas {
+  width:100%;
+  height: 400px;
+}
+</style>
 
-    <header><h1>Enrollments</h1></header>
-    <section class="enrollments">
-      <div id="loader" class="loading"><img src="loader.gif"/></div>
-    </section>
-</div>
-</body>
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/attendee.js"></script>
-</html>
+
+<script src="https://maps.google.com/maps/api/js?key=AIzaSyBdmKUGYS9XHMyjAx7A8Tfa75Er-vFnN0s&sensor=true"></script>
+<script>
+function initialize() {
+  if (document.getElementById("map_canvas")) {
+    var point = new google.maps.LatLng(<%= conf['latitude']%>, <%= conf['longitude']%>),
+      //Settings for the map
+      myOptions = {
+        zoom: 15,
+        center: point,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      },
+
+        //Finding the div we want the map to be in
+        mapCanvas = document.getElementById("map_canvas"),
+        //Pass in the div and map settings to the map
+        map = new google.maps.Map(mapCanvas, myOptions),
+
+        //
+        marker = new google.maps.Marker({
+          position: point,
+          map: map,
+          title: "Drinkup here!"
+        });
+      }
+    }
+    </script>
+
+  </head>
+  <body onload="initialize()">
+    <div class="main">
+      <header><img class="poster" src="drinkup_em.svg" /></header>
+      <section class="intro">
+        <%= render_partial env, 'Intro' %>
+      </section>
+
+      <header><h1>Location</h1></section>
+        <section class="location">
+          <div id="map_canvas"></div>
+        </section>
+
+        <header><h1>Enrollments</h1></header>
+        <section class="enrollments">
+          <div id="loader" class="loading"><img src="loader.gif"/></div>
+        </section>
+      </div>
+    </body>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/attendee.js"></script>
+    </html>
