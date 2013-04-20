@@ -14,12 +14,12 @@
     {
         "github-id" : "552990",
         "avaliable-time" : [0, 1, 2],
-        "capability-of-ahcohol" : 2,
+        "capability-of-alcohol" : 2,
         "skills-of-interest" : ["python", "ruby", "android"]
     }
 
 ### Fields
 - github-id. Inner id of your github account
 - avaliable-time. 0 - April 29th. 1- April 30th. 2 - May 1st.
-- capability-of-ahcohol. How many bottles of beer can you drink?
+- capability-of-alcohol. How many bottles of beer can you drink?
 - skills-of-interest. JSON array of the skills that you are interested in.
