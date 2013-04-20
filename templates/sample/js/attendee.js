@@ -14,8 +14,14 @@ $(function(){
                     $(html).find(".avatar img").attr('src', result['avatar_url']);
                     $(html).find(".name").attr('href', result['url']);
                     $(html).find(".name").html(result['login']);
-                    #.each(result[''])
-                    $(html).find(".cal-list").html(result['login']);
+                    $.each(result['avaliable-time'], function(index, day) {
+                        $(html).find(".cal-list").append('<div class="cal">' + day + '</div>');
+                    });
+
+                    $.each(result['skills-of-interest'], function(index, skill) {
+                        $(html).find(".skill-list").append('<div class="skill">' + skill + '</div>');
+                    });
+
                     container.append(html);
                 });
             });
