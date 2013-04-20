@@ -1,12 +1,12 @@
 # Harbin Github Users
 
-## Smell Like Geek Spirit！
+## Smells Like Geek Spirit！
 
-*  Do you have the feeling of first love  when you first use Github? 
-*  Do you have more pleasure than triple kill when you push code to Github?
-*  Do you want to attend the Github Worldwide Drinkup when you read the Github blog?
+* Did it feel like first love when you first ran into Github?
+* Did you feel more accomplished when you push some code to Github even than a penta-kill in Dota or LOL?
+* Did you ever dream to join the Github Worldwide Drinkup when you read those activities in Github blog?
 
-If you have any of these characters, you are the geeky guy that we want! Don't hesitate, send your pull request and join us now!
+If your answer is yes for any of these questions, you are the geeky guy that we want! Don't hesitate, send your pull request and join us now!
 
 Happy Hacking & Drinking!
 
@@ -14,16 +14,16 @@ Happy Hacking & Drinking!
 
 ### Requirements
 
-We welcome all the Github lovers to attend this hackathon! As the limited place , it can only hold 10 - 15 people. So, we have to review all the requests  and confirm the qualification. If you want to join us , you should 
+We welcome all Github lovers to attend this hackathon! But, due to the limitation of place, it can only hold 10 - 15 people, we have to review all the requests and confirm the qualification. If you want to join us , you should
 
 
 1.  Have a  Github account before 2013-04-20
-2.  Have open sourced at least one project and been starred by others  
+2.  Have open sourced at least one project which has been starred by others
 3.  Have contributed to other open source project hosted on Github
 
 ### Bonus
 
-1. If you have a open source project which has more than 200 stars
+1. If you have an open source project that has more than 200 stars
 2. If you have contributed to any famous open source project which has more than 500 stars
 
 You will get bonus when we review your request.
@@ -35,32 +35,32 @@ You will get bonus when we review your request.
 * Create a json file named as YOUR_GITHUB_LOGIN.json
 * Fill the json file according to void-main.json
 * Push the json file to your own remote repo
-* Send us a pull-request to the right branch
+* Send us a pull-request to the *correct* branch
 
 ## Agenda
 
 ### Hackathon
 
 * Date: `2013-4-28 10:00` - `2013-4-29 16:00`
-* Topic: Hackathon. We will release a toy project in one day! 
-* Feel free choose your project and your teammates.
-* Supplies: Lunch, Super, Soft Drinks, Fruits, Snacks.
+* Topic: Hackathon. We will release a toy project in one day!
+* Feel free to choose your project and your teammates.
+* Supplies: lunch, supper, soft drinks, fruits and snacks.
 * Place: TBD
 
 ### Drinkup
 
 * Date: `2013-4-29 18:00` - `2013-4-29 20:00`
-* Topic: Drinkup. Show your toy project and talk any things about Github or geek stuffs. 
-* Supplies: Soft Drinks, Snacks and German Beer
+* Topic: Drinkup. Show your toy project and talk things between you and Github or geek stuffs.
+* Supplies: soft drinks, snacks and *German* Beer
 * Place: TBD
 
 ## About the Fee
 
-This activity is FREE of Charge!
+This activity is *FREE* of Charge!
 
 ## Sponsor
 
-Thanks [@zhf](https://github.com/zhf) for sponsoring this Hackathon & Drinkup！
+Thanks [@zhf](https://github.com/zhf) for sponsoring this Hackathon & Drinkup!
 
 
 
