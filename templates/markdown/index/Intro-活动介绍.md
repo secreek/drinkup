@@ -1,6 +1,6 @@
 # Harbin Github Users
 
-## Smells Like Geek Spirit！
+## Smells Like Geek Spirit!
 
 * Did it feel like first love when you first ran into Github?
 * Did you feel more accomplished when you push some code to Github even than a penta-kill in Dota or LOL?
