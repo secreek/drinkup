@@ -98,16 +98,21 @@
  </style>
 </head>
 <body>
-	<div class="main">
-   <header><img class="poster" src="drinkup_em.svg" /></header>
-   <section class="intro">
-    <%= render_partial env, 'Intro' %>
-  </section>
+  <div class="main">
+    <header><img class="poster" src="drinkup_em.svg" /></header>
+    <section class="intro">
+      <%= render_partial env, 'Intro' %>
+    </section>
 
-  <h1>Enrollments</h1>
-  <section class="enrollments">
-    <div id="loader" class="loading"><img src="loader.gif"/></div>
-  </section>
+    <header><h1>Location</h1></section>
+    <section class="location">
+    <div id="map_canvas"></div>
+    </section>
+
+    <header><h1>Enrollments</h1></header>
+    <section class="enrollments">
+      <div id="loader" class="loading"><img src="loader.gif"/></div>
+    </section>
 </div>
 </body>
 <script type="text/javascript" src="js/jquery.min.js"></script>
