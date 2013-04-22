@@ -1,7 +1,14 @@
 {
-  "date": "201304",
-  "place": "hit",
-  "subject": "Harbin Github Users Drinkup!",
-  "latitude": 45.74599,
-  "longitude": 126.62743
+    "summary" : "Drink Up",
+    "location" : "大哈工大",
+    "start" : {
+        "dateTime" : "2013-04-28T10:00:00.000-07:00"
+    },
+    "end" : {
+        "dateTime" : "2013-04-29T16:00:00.000-07:00"
+    },
+    "description" : "http://drinkup.in/hit",
+    "organizer" : {
+        "displayName" : "GoF"
+    }
 }
