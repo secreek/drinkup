@@ -8,9 +8,10 @@ $(function(){
         success: function(results){
             result_objs = JSON.parse(results);
             container.empty();
-            $.each(result_objs, function(index, result) {
-                $(this).load("attendee_item.html", function(response){
-                    var html = $(response);
+            $(this).load("attendee_item.html", function(response){
+                var html_template = $(response);
+                $.each(result_objs, function(index, result) {
+                    var html = html_template.clone();
                     $(html).find(".avatar img").attr('src', result['avatar_url']);
                     $(html).find(".name").attr('href', result['html_url']);
                     $(html).find(".name").html(result['login']);
