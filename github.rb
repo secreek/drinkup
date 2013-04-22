@@ -23,4 +23,10 @@ class Github
     return NetworkUtils.do_request_returning_json user_uri, params
   end
 
+  def self.get_user_info_from_login login
+    user_uri = "https://api.github.com/users/" + login
+    params = JSON.load(open("github_key.json").read())
+    return NetworkUtils.do_request_returning_json user_uri, params
+  end
+
 end

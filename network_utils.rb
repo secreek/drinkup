@@ -15,12 +15,13 @@ module NetworkUtils
       return response.body if response.is_a?(Net::HTTPSuccess)
     end
 
-    return nil
+    nil
   end
 
   def self.do_request_returning_json uri_str, params={}
     result = self.do_request(uri_str, params)
     return JSON.load result if result
+    nil
   end
 
 end

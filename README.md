@@ -15,8 +15,8 @@ This json file stores the configuration for this drinkup
 
 #### Sample config
     {
-        "time": "April 28th - April 30th, 2013", 
-        "when": "Catlife", 
+        "time": "April 28th - April 30th, 2013",
+        "when": "Catlife",
         "subject": "Drinkup & Hackathon"
     }
 
@@ -29,7 +29,7 @@ This json file stores the configuration for this drinkup
 ### Avaliable templates
 Templates are branches named in the convention of ```template-```.
 
-#### Dummy template 
+#### Dummy template
 Branch name *template-dummy*
 
 - Design & implemented by HF
@@ -56,7 +56,7 @@ Branch name *template-dummy*
     }
 
 #### Fields
-- github-id. Inner id of your github account
+- github-id. Inner id of your github account, or login name of github
 - avaliable-time. The drinkup's date index you are avaliable, the index starts from 0
 - capability-of-alcohol. How many bottles of beer can you drink?
 - skills-of-interest. JSON array of the skills that you are interested in
