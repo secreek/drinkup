@@ -30,7 +30,7 @@ You will get bonus when we review your request.
 
 ### How to join us
 
-* Fork this repo, and find the drinkup branch you are interested in
+* Fork this [repo](https://github.com/secreek/drinkup), and find the drinkup branch you are interested in
 * The drinkup branch follows the convention of LOCATION-DATE, for  example, drinkup that takes place in HIT at April of 2013 is named as hit-201304
 * Create a json file named as YOUR_GITHUB_LOGIN.json
 * Fill the json file according to void-main.json
