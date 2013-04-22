@@ -107,6 +107,9 @@
    width: auto;
    height: 500px;
  }
+ #share {
+   padding: 30px;
+ }
  </style>
 
  <script src="https://maps.google.com/maps/api/js?key=AIzaSyBdmKUGYS9XHMyjAx7A8Tfa75Er-vFnN0s&sensor=true"></script>
@@ -154,7 +157,10 @@
           <div id="loader" class="loading"><img src="loader.gif"/></div>
         </section>
         <!-- Place this tag where you want the share button to render. -->
-        <div class="g-plus" data-action="share"></div>
+        <div id="share">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://drinkup.com" data-lang="en">Tweet</a>
+            <div class="g-plus" data-action="share"></div>
+        </div>
       </div>
     </body>
     <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -171,10 +177,11 @@
     </script>
     <!-- Place this tag after the last share tag. -->
     <script type="text/javascript">
-    (function() {
-     var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-     po.src = 'https://apis.google.com/js/plusone.js';
-     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-   })();
-   </script>
-   </html>
+        (function() {
+         var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+         po.src = 'https://apis.google.com/js/plusone.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+         })();
+    </script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.      twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</html>
