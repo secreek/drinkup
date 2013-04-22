@@ -107,6 +107,9 @@
    width: auto;
    height: 500px;
  }
+ #share {
+   padding: 30px;
+ }
  </style>
 </head>
 <body>
@@ -161,7 +164,10 @@
           <div id="loader" class="loading"><img src="loader.gif"/></div>
         </section>
         <!-- Place this tag where you want the share button to render. -->
-        <div class="g-plus" data-action="share"></div>
+        <div id="share">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://drinkup.com" data-lang="en">Tweet</a>
+            <div class="g-plus" data-action="share"></div>
+        </div>
       </div>
     </body>
     <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -173,5 +179,6 @@
          po.src = 'https://apis.google.com/js/plusone.js';
          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
          })();
-</script>
-    </html>
+    </script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.      twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</html>
