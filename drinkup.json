@@ -1,17 +1,13 @@
 {
     "summary" : "Drink Up",
-    "location" : "Harbin Institude of Technology",
+    "location" : "Harbin Institute of Technology",
     "start" : {
-        "dateTime" : "2013-04-28T10:00:00.000-07:00"
+        "dateTime" : "2013-04-28T10:00:00.000+08:00"
     },
     "end" : {
-        "dateTime" : "2013-04-29T16:00:00.000-07:00"
+        "dateTime" : "2013-04-29T16:00:00.000+08:00"
     },
     "description" : "Harbin Github Users Drinkup! http://drinkup.in/hit",
-    "organizer" : {
-        "displayName" : "GoF"
-    },
-    "creator" : {
-        "displayName" : "GoF"
-    }
+    "latitude": 45.74599,
+    "longitude": 126.62743
 }
