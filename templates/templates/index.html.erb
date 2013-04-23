@@ -160,7 +160,7 @@
         <div id="share">
             <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://drinkup.com" data-lang="en">Tweet</a>
             <div class="g-plus" data-action="share"></div>
-            <button href="" onclick="insert_event();">Add to Calendar</button>
+            <button id="calendar" disabled=true href="" onclick="insert_event();">Add to Calendar</button>
         </div>
       </div>
     </body>
@@ -185,6 +185,7 @@
          })();
     </script>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    <script src="https://apis.google.com/js/client.js?onload=load_drinkup_data"></script>
+    <script type="text/javascript" src="js/base64.js"></script>
     <script type="text/javascript" src="js/calendar.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=init_drinkup_data"></script>
 </html>

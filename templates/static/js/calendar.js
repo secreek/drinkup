@@ -2,30 +2,23 @@ var api_key = 'AIzaSyBGpH8Z_hbAaEgqq3TMQ5HEehYYtAtLDcI';
 var client_id = '2832182632';
 
 var scopes = 'https://www.googleapis.com/auth/calendar';
-var resource;
+var resource={};
 
-function get_json(){
-    //temp version, refactor when solve the problem getting json from 
-    //url = 'https://raw.github.com/secreek/drinkup/hit-201304/drinkup.json?callback=?'
-    data = {
-        "summary" : "Drink Up",
-        "location" : "Harbin Institude of Technology",
-        "start" : {
-            "dateTime" : "2013-04-28T10:00:00.000-07:00"
-        },
-        "end" : {
-            "dateTime" : "2013-04-29T16:00:00.000-07:00"
-        },
-        "description" : "http://drinkup.in/hit",
-        "organizer" : {
-            "displayName" : "GoF"
-        }
-    };
-    return data;
-}
+function set_switch(id, sw_status){   
+    var traget=document.getElementById(id);   
+    if(sw_status == 'on'){ 
+        traget.disabled=false;   
+    }else{
+        traget.style.display=true;  
+    }   
+}  
 
-function get_drinkup_data() {
-    resource = get_json();
+function init_drinkup_data() {
+    url = 'https://api.github.com/repos/secreek/drinkup/contents/drinkup.json?ref=hit-201304&callback=?'
+    $.getJSON(url, function(json){
+        resource = JSON.parse(base64decode(json.data.content));
+        set_switch('calendar', 'on');
+    });
 }
 
 function insert_event() {
