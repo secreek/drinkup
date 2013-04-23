@@ -3,7 +3,7 @@
 <head>
   <meta name="place" content="hit">
   <meta name="date" content="201304">
-  <title>Harbin Github Users Drinkup!</title>
+  <title>Drink Up</title>
   <style type="text/css">
   body, html {
     background-color: white;
@@ -44,10 +44,11 @@
  .enrollments {
    padding: 30px;
  }
+ .enrollments {
+ }
  .attendee {
    display: inline-block;
    background-color: white;
-   background: -webkit-linear-gradient(#fff 0%, #eee 50%, #fff 100%);
    padding: 15px;
    border-radius: 5px;
    box-shadow: 0px 1px 0px black;
@@ -55,7 +56,6 @@
    white-space: nowrap;
    overflow: hidden;
    margin: 20px 10px;
-   border: 1px solid rgba(0,0,0,.5);
  }
  .details, .avatar {
    display: inline-block;
@@ -66,7 +66,6 @@
    color: #666;
    line-height: 20px;
    font-size: 12px;
-   margin-left: 10px;
  }
  .details li {
    list-style: none;
@@ -76,22 +75,12 @@
    width: 80px;
    height: 80px;
  }
- .name {
-   font-family: cursive;
-   font-size: 1.5em;
-   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
- }
  .cal {
    border: 1px solid #ccc;
-   border-top: 5px solid #ae2222;
+   border-top: 3px solid #ae2222;
    display: inline-block;
    margin-right: 5px;
-   padding: 3px;
-   font-family: Helvetica,arial, sans-serif;
-   font-weight: bold;
- }
- .cal-list {
-   line-height: 0.7;
+   padding: 1px;
  }
  .skill {
    display: inline-block;
@@ -100,8 +89,6 @@
    padding: 3px;
    border-radius: 3px;
    margin-right: 3px;
-   font-family: Helvetica, Arial, sans-serif;
-   box-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
  }
  .loading {
    display: block;
@@ -122,7 +109,6 @@
  }
  #share {
    padding: 40px;
- }
  }
  </style>
 
@@ -254,6 +240,9 @@
         <div id="share">
             <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://drinkup.com" data-lang="en">Tweet</a>
             <div class="g-plus" data-action="share"></div>
+            <!--<button id="calendar" disabled=true href="" onclick="insert_event();">Add to Calendar</button>
+            -->
+            <a href="http://www.google.com/calendar/event?action=TEMPLATE&text=Harbin%20Github%20User%20Drinkup&dates=20130427/20130428&details=Harbin%20Github%20User%20Drinkup!%20http%3A%2F%2Fdrinkup.in%2Fhit&location=Harbin%20Institute%20of%20Technology&trp=true&sprop=Drinkup!&sprop=name:http%3A%2F%2Fdrinkup.in%2Fhit" target="_blank"><img src="//www.google.com/calendar/images/ext/gc_button1.gif" border=0></a>
         </div>
       </div>
     </body>
@@ -278,4 +267,9 @@
          })();
     </script>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <!--
+    <script type="text/javascript" src="js/base64.js"></script>
+    <script type="text/javascript" src="js/calendar.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=init_drinkup_data"></script>
+    -->
 </html>
