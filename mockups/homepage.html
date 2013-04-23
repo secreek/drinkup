@@ -13,6 +13,7 @@
     .main {
       max-width: 1280px;
       margin: 0 auto;
+      float: left;
     }
     a {
       text-decoration: none;
@@ -20,7 +21,6 @@
     }
     a:hover {
       color: #08c;
-      
     }
     .banner {
       background: black url(banner_hackathon.jpg) center center no-repeat;
@@ -139,88 +139,91 @@
     .sidebar {
       background-color:#f9f8e5;
       padding: 10px;
-      margin-right: 10px;
-    }
-/*
-    .past {
-      margin: 0;
-    }
-    .dua aside {
       display: inline-block;
       width: 50%;
+      float: left;
     }
-*/
+    .wrapper {
+        width: 960px; /*页面总宽度*/
+        margin: 0 auto; /*水平居中*/
+        text-align: left; /*重置文本对齐方式*/
+    }
+
+    footer {
+        clear: both;
+    }
+
   </style>
 </head>
 <body>
   <header>
     <div class="banner"></div>
+      <section>
+        <article>
+            <h1>Gay Developer Hackathon && Drinkups</h1>
+            <p><b>Quotations from Cliff Woo</b> - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </article>
+      </section>
   </header>
   <div class="main">
-  <section>
-    <article>
-      <h1>Gay Developer Hackathon && Drinkups</h1>
-      <p><b>Quotations from Cliff Woo</b> - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </article>
-  </section>
-  <section>
-    <h2>Upcoming Events</h2>
-    <div class="event-board">
-      <div class="event">
-        <div class="card">
-          <div class="poster"><img src="drinkup_em.svg"/></div>
-          <div class="details">
-            <article>
-              <h4>Harbin Github User Hackathon && Drinkup</h4>
-              <p>Short Description about this Event</p>
-            </article>
-          </div>
-          <a class="button" href="http://drinkup.in/hit">Enroll</a>
-        </div>
-        <div class="date"><span class="month">April<span class="year">2013</span></span><span class="day">29</span></div>
-      </div>
-    </div>
-  </section>
+        <section>
+            <h2>Upcoming Events</h2>
+            <div class="event-board">
+                <div class="event">
+                    <div class="card">
+                        <div class="poster"><img src="drinkup_em.svg"/></div>
+                        <div class="details">
+                            <article>
+                            <h4>Harbin Github User Hackathon && Drinkup</h4>
+                            <p>Short Description about this Event</p>
+                            </article>
+                        </div>
+                        <a class="button" href="http://drinkup.in/hit">Enroll</a>
+                    </div>
+                    <div class="date"><span class="month">April<span class="year">2013</span></span><span class="day">29</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Gallery</h2>
+            <div>Calling API to grab photos from flickr or g+ ...</div>
+        </section>
+
+        <section>
+            <h2>Locations</h2>
+            <div>Spots of all events at a glance</div>
+            <div><img src="http://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=300x300&maptype=roadmap&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318&markers=color:red%7Ccolor:red%7Clabel:C%7C40.718217,-73.998284&sensor=false" />
+            </div>
+        </section>
+        <div class="main-footer"></div>
+  </div>
+
 
   <div class="dua">
-    <div class="sidebar">
-      <section class="past">
-        <h2>Past Events</h2>
-        <ul>
-          <li><a href="#">March 1, 2013 - Developer Drinkup.in Paris</a></li>
-          <li><a href="#">February 1, 2013 - Developer Drinkup.in New York</a></li>
-          <li><a href="#">January 1, 2013 - Developer Drinkup.in Palo Alto</a></li>
-        </ul>
-      </section>
-      
-      <section>
-        <h2>Next Drinkup?</h2>
-        <p>Should you have any suggestions on the future drinkups, drop by this <a href="https://github.com/secreek/drinkup/issues">Github Issues</a> and leave your message.</p>
-        <h2>Host a drinkup?</h2>        
-        <p><a href="mailto:drunk@drinkup.in">Let us know</a>, if you are interested in sponsoring, organizing or want to co-organize with us a local drinkup event. Cost of an event starts from ¥512.</p>
-      </section>
-    </div>
-  
-  <div>
-    <section>
-      <h2>Gallery</h2>
-      <div>Calling API to grab photos from flickr or g+ ...</div>
-    </section>
+        <div class="sidebar">
+            <section class="past">
+                <h2>Past Events</h2>
+                <ul>
+                <li><a href="#">March 1, 2013 - Developer Drinkup.in Paris</a></li>
+                <li><a href="#">February 1, 2013 - Developer Drinkup.in New York</a></li>
+                <li><a href="#">January 1, 2013 - Developer Drinkup.in Palo Alto</a></li>
+                </ul>
+            </section>
 
-    <section>
-      <h2>Locations</h2>
-      <div>Spots of all events at a glance</div>
-      <div><img src="http://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=300x300&maptype=roadmap&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318&markers=color:red%7Ccolor:red%7Clabel:C%7C40.718217,-73.998284&sensor=false" />
-      </div>
-    </section>  
+            <section>
+                <h2>Next Drinkup?</h2>
+                <p>Should you have any suggestions on the future drinkups, drop by this <a href="https://github.com/secreek/drinkup/issues">Github Issues</a> and leave your message.</p>
+                <h2>Host a drinkup?</h2>
+                <p><a href="mailto:drunk@drinkup.in">Let us know</a>, if you are interested in sponsoring, organizing or want to co-organize with us a local drinkup event. Cost of an event starts from ¥512.</p>
+            </section>
+        </div>
   </div>
-  </div>
-  <div class="main-footer"></div>  
-  </div>
+
   <footer>
-    <div>Social Icons: RSS | @drinkupin |  drunk@drinkup.in | Google Plus | Flickr | Youtube</div>
-    <div>© 2013 Cliff Woo | About us | Term of Service and Use</div>
+        <div>Social Icons: RSS | @drinkupin |  drunk@drinkup.in | Google Plus | Flickr | Youtube</div>
+        <div>© 2013 Cliff Woo | About us | Term of Service and Use</div>
   </footer>
 </body>
 </html>
