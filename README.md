@@ -57,6 +57,6 @@ Branch name *template-dummy*
 
 #### Fields
 - github-id. Inner id of your github account, or login name of github
-- avaliable-time. The drinkup's date index you are avaliable, the index starts from 0
+- avaliable-time. The drinkup's date index you are avaliable, the index starts from 0. For example, if the activity lasts 2 days, the whole avaliable-time is `[0, 1]`.
 - capability-of-alcohol. How many bottles of beer can you drink?
 - skills-of-interest. JSON array of the skills that you are interested in
