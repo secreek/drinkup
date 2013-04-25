@@ -1,5 +1,3 @@
-General Procedures && Rules
-
 1. Send your profile in json via Github Pull-requests
 2. Bring a cool idea and discuss it in Github Issues
 3. Build a team or join one
