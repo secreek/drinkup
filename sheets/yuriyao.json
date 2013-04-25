@@ -1,6 +1,14 @@
 {
-	"github-id" : "2313944",
-	"avaliable-time" : [0, 1, 2],
-	"capability-of-alcohol" : 2,
-	"skills-of-interest" : ["c", "linux-kernel", "c++", "python"]
+  "github-id": "2313944",
+  "avaliable-time": [
+    1,
+    1
+  ],
+  "capability-of-alcohol": 2,
+  "skills-of-interest": [
+    "c",
+    "linux-kernel",
+    "c++",
+    "python"
+  ]
 }

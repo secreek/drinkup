@@ -1,6 +1,14 @@
 {
-  "github-id" : "1238134",
-  "avaliable-time" : [0, 1, 2],
-  "capability-of-alcohol" : 2,
-  "skills-of-interest" : ["Javascript","Vim","RasberryPi","Linux"]
+  "github-id": "1238134",
+  "avaliable-time": [
+    1,
+    1
+  ],
+  "capability-of-alcohol": 2,
+  "skills-of-interest": [
+    "Javascript",
+    "Vim",
+    "RasberryPi",
+    "Linux"
+  ]
 }

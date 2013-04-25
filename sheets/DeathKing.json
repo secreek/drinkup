@@ -1,6 +1,14 @@
 {
-  "github-id" : "895809",
-  "avaliable-time" : [0, 1, 2],
-  "capability-of-alcohol" : "random", 
-  "skills-of-interest" : ["ruby", "scheme", "shoes", "linux"]
+  "github-id": "895809",
+  "avaliable-time": [
+    1,
+    1
+  ],
+  "capability-of-alcohol": "random",
+  "skills-of-interest": [
+    "ruby",
+    "scheme",
+    "shoes",
+    "linux"
+  ]
 }

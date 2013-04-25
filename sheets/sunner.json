@@ -1,6 +1,14 @@
 {
-  "github-id" : "sunner",
-  "avaliable-time" : [1],
-  "capability-of-alcohol" : 0,
-  "skills-of-interest" : ["C", "Python", "Bash", "Operation"]
+  "github-id": "sunner",
+  "avaliable-time": [
+    0,
+    1
+  ],
+  "capability-of-alcohol": 0,
+  "skills-of-interest": [
+    "C",
+    "Python",
+    "Bash",
+    "Operation"
+  ]
 }

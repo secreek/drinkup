@@ -1,6 +1,13 @@
 {
-    "github-id": "cloudaice",
-    "avaliable-time": [0],
-    "capability-of-alcohol" : 2,
-    "skills-of-interest" : ["Python", "Openresty", "Go"]
+  "github-id": "cloudaice",
+  "avaliable-time": [
+    1,
+    1
+  ],
+  "capability-of-alcohol": 2,
+  "skills-of-interest": [
+    "Python",
+    "Openresty",
+    "Go"
+  ]
 }

@@ -1,6 +1,13 @@
 {
-  "github-id" : "1147941",
-  "avaliable-time" : [0, 1, 2],
-  "capability-of-alcohol" : 2,
-  "skills-of-interest" : ["CSS", "JavaScript", "php"]
+  "github-id": "1147941",
+  "avaliable-time": [
+    1,
+    1
+  ],
+  "capability-of-alcohol": 2,
+  "skills-of-interest": [
+    "CSS",
+    "JavaScript",
+    "php"
+  ]
 }

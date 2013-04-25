@@ -1,6 +1,13 @@
 {
-	"github-id" : "1751150",
-	"avaliable-time" : [0, 1, 2],
-	"capability-of-alcohol" : 2,
-	"skills-of-interest" : ["ruby", "android", "rails"]
+  "github-id": "1751150",
+  "avaliable-time": [
+    1,
+    1
+  ],
+  "capability-of-alcohol": 2,
+  "skills-of-interest": [
+    "ruby",
+    "android",
+    "rails"
+  ]
 }

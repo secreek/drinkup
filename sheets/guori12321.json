@@ -1,6 +1,12 @@
 {
-  "github-id" : "440320",
-  "avaliable-time" : [0, 1, 2, 3, 4, 5],
-  "capability-of-alcohol" : 1,
-  "skills-of-interest" : ["python", "django"]
+  "github-id": "440320",
+  "avaliable-time": [
+    1,
+    1
+  ],
+  "capability-of-alcohol": 1,
+  "skills-of-interest": [
+    "python",
+    "django"
+  ]
 }

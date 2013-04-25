@@ -1,6 +1,13 @@
 {
-  "github-id" : "void-main",
-  "avaliable-time" : [0, 1, 2],
-  "capability-of-alcohol" : 2,
-  "skills-of-interest" : ["python", "ruby", "android"]
+  "github-id": "void-main",
+  "avaliable-time": [
+    1,
+    1
+  ],
+  "capability-of-alcohol": 2,
+  "skills-of-interest": [
+    "python",
+    "ruby",
+    "android"
+  ]
 }

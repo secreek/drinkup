@@ -1,6 +1,14 @@
 {
-  "github-id" : "778549",
-  "avaliable-time" : [0, 1, 2],
-  "capability-of-alcohol" : 3,
-  "skills-of-interest" : ["c/c++", "GLSL", "Qt","Embedded Linux"]
+  "github-id": "778549",
+  "avaliable-time": [
+    1,
+    1
+  ],
+  "capability-of-alcohol": 3,
+  "skills-of-interest": [
+    "c/c++",
+    "GLSL",
+    "Qt",
+    "Embedded Linux"
+  ]
 }
