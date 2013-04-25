@@ -2,6 +2,10 @@
 <html>
 <head>
   <style type="text/css">
+    html, body {
+      margin: 0;
+      background-color: #eee;
+    }
     body {
       color: #333;
       font-family: Candara, sans-serif;
@@ -10,10 +14,10 @@
       color: #444;
       font-family: sans-serif;
     }
-    .main {
-      max-width: 1280px;
+    .main-wrapper {
+      width: 980px;
       margin: 0 auto;
-      float: left;
+      overflow: hidden;
     }
     a {
       text-decoration: none;
@@ -26,27 +30,34 @@
       background: black url(banner_hackathon.jpg) center center no-repeat;
       height: 400px;
     }
+    .event-board {
+      margin: 20px auto;
+/*       max-width: 690px; */
+      width: 690px;
+    }
     .event {
-      margin: 20px 0;
-      min-width: 710px;
+      position: relative;
+      padding-left: 80px;
+/*       min-width: 710px; */
 /*
       padding: 20px;
       box-shadow: inset 0 0 10px #ddd;
       border-radius: 10px;
 */
     }
-    .event>div, .card>div, .details {
+    .poster, .details {
       display: inline-block;
     }
     .poster, .date, .details {
       vertical-align: top;
     }
     .card {
-      border: 1px solid gray;
-      box-shadow: 0 0 5px #999;
-      margin-left: -10px;
+/*       border: 1px solid rgba(0,0,0,0.1); */
+      box-shadow: 0 0 3px #999;
       position: relative;
       display: block;
+      background-color: white;
+      width: 610px;
     }
     .button {
       display: block;
@@ -59,9 +70,13 @@
       position: absolute;
       right:    0;
       bottom:   0;
+      font-weight: bold;
+      font-family: sans-serif;
+      border-top-left-radius: 5px;
     }
     .button:hover {
       background-color: #a53131;
+      color: white;
     }
     .poster, .card {
       height: 200px;
@@ -70,18 +85,20 @@
       height: 100%;
       border-right: 1px solid gray;
     }
-    .date, .card {
-      background: -webkit-linear-gradient(#ffffff 0%, #eeeeee 100%);
-    }
     .date {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      margin-top: -10px;
+/*       margin-left: -80px; */
       height: 100px;
       width: 100px;
       font-family: "Arial Black", sans-serif;
       -webkit-transform: rotate(-5deg);
       box-shadow: 0 5px 10px #666;
       border-top: 1px solid #666;
-      float: left;
-      margin-top: -10px;
+      background: -webkit-linear-gradient(#ffffff 0%, #eeeeee 100%);
     }
     .month {
       display: block;
@@ -120,7 +137,7 @@
       width: auto;
       float: right;
     }
-    .dia>*:last-child {
+    .dua>*:last-child {
       min-width: 200px;
       float: left;
     }
@@ -136,61 +153,241 @@
     .past ul {
       list-style-image: url(beer-icon.svg);
     }
-    .sidebar {
-      background-color:#f9f8e5;
-      padding: 10px;
-      display: inline-block;
-      width: 50%;
-      float: left;
-    }
-    .wrapper {
-        width: 960px; /*页面总宽度*/
-        margin: 0 auto; /*水平居中*/
-        text-align: left; /*重置文本对齐方式*/
-    }
 
     footer {
         clear: both;
     }
-
+    .sns-name {
+    }
+    .intro {
+      background-color: #eee;
+/*       background: -webkit-linear-gradient(#ccc 0%, #eee 100%); */
+      width: 100%;
+    }
+    .intro>article {
+      float: left;
+      font-size: 1.4em;
+      text-shadow: 0 1px #f0f0f0;
+      margin: 0 20px;
+      padding: 0;
+      width: 500px;
+    }
+    .intro>aside {
+      float: right;
+      margin: 0 20px 0 0;
+      padding: 0 0 30px 0;
+      width: 400px;
+      background-color:#f9f8e5;
+      box-shadow: 2px 3px 5px rgba(0,0,0, .3);
+    }
+    .rules {
+      font-family: cursive;
+      text-align: center;
+    }
+    .sidebar li {
+      line-height: 130%;
+    }
+    .intro>* {
+      margin: 20px;
+    }
+    .section-title {
+      font-family: "Michroma", "Lucida Sans", sans-serif;
+      font-size: 300%;
+      color: rgba(0,0,0,0.05);
+      text-shadow: 0 1px white;
+      text-align: center;
+      font-weight: bold;
+      padding-top: 30px;
+    }
+    .clearfix:before, .clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+    }
+    .next, .host{
+      width: 46%;
+      margin: 0 2%;
+    }
+    .next {
+      float: left;
+    }
+    .host {
+      float: right;
+    }
+    footer{
+      background-color: #333;
+      color: #ccc;
+      border-top: 2px solid black;
+    }
+    .future h3 {
+      color: #eee;
+    }
+    footer a {
+      color: #fdd;
+    }
+    .future {
+      border-bottom: 1px solid black;
+    }
+    footer a:hover {
+      text-decoration: underline;
+      color: #08c;
+    }
+    .links>div {
+      padding: 5px 0;
+      text-align: center;
+      width: 100%;
+    }
+    .links {
+      border-top: 1px solid #666;
+      padding: 20px 0 30px 0;
+    }
+    .splitter:before {
+        color: #666;
+        content: " | ";
+    }
+    .past {
+      height: auto;
+      overflow: hidden;
+      padding-left: 20px;
+    }
+    .past ul {
+      float: right;
+      width: 400px;
+    }
+    .gallery{
+      float: none;
+      width: auto;
+      overflow: hidden;
+      
+    }
+    .gallery img {
+      border: 3px solid white;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      width: 80px;
+      height: 60px;
+      margin: 3px;
+    }
+    .clearfix:after {
+        clear: both;
+    }
+    
+    /*  Responsive  */
+    @media screen and (max-width: 980px) {
+      .main-wrapper {
+        width: 100%;
+      }
+      .intro>article {
+        width: 60%;
+        margin: 0 2%;
+      }
+      .intro>aside {
+        width: 34%;
+        margin: 0 2% 0 0;
+      }
+    }
+    @media screen and (max-width: 750px) {
+      .past ul {
+        float: none;
+      }
+    }
+    @media screen and (max-width: 700px) {
+      .date {
+        display: none;
+        float: none;
+      }
+      .event {
+        padding-left: 2%;
+      }
+    }
+    @media screen and (max-width: 650px) {
+      .footer-wrapper, .main-wrapper {
+        width: 100%;
+      }
+      .intro>article {
+        width: auto;
+        float: none;
+        margin: 0 2%;
+      }
+      .intro>aside {
+        width: 96%;
+        float: none;
+        margin: 0 2%;
+      }
+      .next, .host {
+        float: none;
+        width: 90%;
+      }
+      .event {
+        padding-left: 0;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="banner"></div>
-      <section>
-        <article>
-            <h1>Gay Developer Hackathon && Drinkups</h1>
-            <p><b>Quotations from Cliff Woo</b> - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-        </article>
-      </section>
   </header>
-  <div class="main">
-        <section>
-            <h2>Upcoming Events</h2>
-            <div class="event-board">
-                <div class="event">
-                    <div class="card">
-                        <div class="poster"><img src="drinkup_em.svg"/></div>
-                        <div class="details">
-                            <article>
-                            <h4>Harbin Github User Hackathon && Drinkup</h4>
-                            <p>Short Description about this Event</p>
-                            </article>
-                        </div>
-                        <a class="button" href="http://drinkup.in/hit">Enroll</a>
-                    </div>
-                    <div class="date"><span class="month">April<span class="year">2013</span></span><span class="day">29</span></div>
-                </div>
-            </div>
-        </section>
+  <div class="main-wrapper">
+      <section class="intro clearfix">
+        <h2 class="section-title">About</h2>
+        <article>
+<!--             <h2><code>$ whoami_</code></h1></h1> -->
+            <p>We are a small group of people who love both open source and beer. We are looking forward to bringing together geeks and nerds to share our passion in building something cool, and we'd like to be your host. Professional developers and students interesting in startups, software development, product design and geeky stuff are invited to participate in these events. Gear up for your next adventurous trip with hackathon and drinkup!</p>
+        </article>
+        <aside class="sidebar"><h3 class="rules">General Procedures && Rules</h3>
+          <ol>
+            <li>Send your profile in json via Github Pull-requests</li>
+            <li>Bring a cool idea and discuss it in Github Issues</li>
+            <li>Build a team or join one</li>
+            <li>Code anything in any language</li>
+            <li>All projects should be released as open source</li>
+            <li>Snacks, cold beer and EC2 servers are free</li>
+            <li>Get your own laptop and you are ready to hack!</li>
+          </ol>
+        </aside>
+      </section>
+      
+      <section>
+          <h2 class="section-title">Upcoming Events</h2>
+          <div class="event-board">
+              <div class="event">
+                  <div class="card">
+                      <div class="poster"><img src="drinkup_em.svg"/></div>
+                      <div class="details">
+                          <article>
+                          <h4>Github Users Hackathon &amp; Drinkup</h4>
+                          <p>Come join the fantastic camp devoted to celebrating the popular favor of Git and Github.</p><p>Apr 28-29, 2013<br/>HIT, Harbin</p>
+                          </article>
+                      </div>
+                      <a class="button" href="http://drinkup.in/hit">Enroll</a>
+                  </div>
+                  <div class="date"><span class="month">April<span class="year">2013</span></span><span class="day">28</span></div>
+              </div>
+          </div>
+      </section>
 
-        <section>
-            <h2>Gallery</h2>
-            <div>Calling API to grab photos from flickr or g+ ...</div>
-        </section>
+      <section class="past">
+        <h2 class="section-title">Past Events</h2>
+        <ul>
+        <li><a href="#">February 14, 2013 - Developer Drinkup.in Beijing</a></li>
+        <li><a href="#">November 3, 2012 - Private Drinkup.in <span class="sns-name">@zhf</span>'s</a></li>
+        </ul>
+        <div class="gallery">
+            <img src="h1.jpeg" />
+            <img src="h2.jpeg" />
+            <img src="h3.jpeg" />
+            <img src="h4.jpeg" />
+            <img src="h5.jpeg" />
+            <img src="h6.jpeg" />
+            <img src="h7.jpeg" />
+            <img src="h8.jpeg" />
+            <img src="h9.jpeg" />
+            <img src="h10.jpeg" />
+            <img src="h11.jpeg" />
+            <img src="h12.jpeg" />
+        </div>
+      </section>
 
+<!--
         <section>
             <h2>Locations</h2>
             <div>Spots of all events at a glance</div>
@@ -198,32 +395,29 @@
             </div>
         </section>
         <div class="main-footer"></div>
+-->
+  
   </div>
 
-
-  <div class="dua">
-        <div class="sidebar">
-            <section class="past">
-                <h2>Past Events</h2>
-                <ul>
-                <li><a href="#">March 1, 2013 - Developer Drinkup.in Paris</a></li>
-                <li><a href="#">February 1, 2013 - Developer Drinkup.in New York</a></li>
-                <li><a href="#">January 1, 2013 - Developer Drinkup.in Palo Alto</a></li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>Next Drinkup?</h2>
-                <p>Should you have any suggestions on the future drinkups, drop by this <a href="https://github.com/secreek/drinkup/issues">Github Issues</a> and leave your message.</p>
-                <h2>Host a drinkup?</h2>
-                <p><a href="mailto:drunk@drinkup.in">Let us know</a>, if you are interested in sponsoring, organizing or want to co-organize with us a local drinkup event. Cost of an event starts from ¥512.</p>
-            </section>
+    <footer>
+      <div class="footer-wrapper">
+        <div class="future clearfix">
+          <div class="next">
+            <h3>Next Drinkup?</h3>
+            <p>Should you have any suggestions on the future drinkups, drop by this <a href="https://github.com/secreek/drinkup/issues">Github Issues</a> and leave your message.</p>
+          </div>
+          <div class="host">
+            <h3>Host a drinkup?</h3>
+            <p><a href="mailto:drunk@drinkup.in">Let us know</a>, if you are interested in sponsoring, organizing or want to co-organize with us a local drinkup event. Cost of an event starts from ¥512.</p>
+          </div>
         </div>
-  </div>
-
-  <footer>
-        <div>Social Icons: RSS | @drinkupin |  drunk@drinkup.in | Google Plus | Flickr | Youtube</div>
-        <div>© 2013 Cliff Woo | About us | Term of Service and Use</div>
+        <div class="links">
+          <div>Contact us: <a href="mailto:drunk@drinkup.in">drunk@drinkup.in</a><span class="splitter"></span><a href="https://twitter.com/drinkupin">@drinkupin</a><span class="splitter"></span><a href="https://plus.google.com/113636888559609963829">Google Plus</a><span class="splitter"></span><a href="#">Flickr</a></div>
+          <div>© 2013 <a href="https://github.com/cliffwoo">Cliff Woo</a> and his gay lovers<span class="splitter"></span><a href="/term.html">Term of Service</a></div>
+          <div>Source code and web site are hosted on <a href="https://github.com/secreek/drinkup">Github</a></div>
+          <div>Powered by Passion, Alcohol and <a href="https://github.com/secreek/jerk">Jerk™</a></div>
+        </div>
+      </div>
   </footer>
 </body>
 </html>
