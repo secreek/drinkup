@@ -15,7 +15,7 @@ $(function(){
                     $(html).find(".avatar img").attr('src', result['avatar_url']);
                     $(html).find(".name").attr('href', result['html_url']);
                     $(html).find(".name").html(result['login']);
-                    $.each(result['avaliable-time'], function(index, day) {
+                    $.each(result['participate_in'], function(index, day) {
                         $(html).find(".cal-list").append('<div class="cal">' + day + '</div>');
                     });
 
